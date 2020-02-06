@@ -6,6 +6,11 @@ body {
     background-size: cover
 }
 
+.container{
+    background-color:#a8d8e2 ;
+    margin: 5% auto;
+}
+
 .inbox-body {
     background: #a8d8e2 no-repeat;
     background-position-x: 0;
@@ -186,7 +191,6 @@ ul.labels-info li a i {
 
 .inbox-head {
     background: none repeat scroll 0 0 #41cac0;
-    border-radius: 0 4px 0 0;
     color: #fff;
     min-height: 80px;
     padding: 20px
@@ -194,7 +198,7 @@ ul.labels-info li a i {
 
 .inbox-head h3 {
     display: inline-block;
-    font-weight: 300;
+    font-weight: 800;
     margin: 0;
     padding-top: 6px
 }
@@ -311,6 +315,56 @@ ul.inbox-pagination li {
 .inbox-body .modal .modal-body textarea {
     border: 1px solid #e6e6e6;
     box-shadow: none
+}
+
+@media screen and (max-width:700px) {
+    .mail-option {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:611px) {
+    #user-desc {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:520px) {
+    .input-append {
+        display: none;
+    }
+}
+
+@media screen and (max-width:610px) {
+    #aside-left {
+        display: none !important;
+    }
+
+    #user-desc {
+        background-color: #41cac0;
+        padding: 20px 0 0 25px;
+    }
+
+    #user-desc .user-name h5 {
+        font-size: 20px;
+    }
+
+    #user-desc .user-name span a {
+        font-size: 16px;
+        color: #587058;
+    }
+
+    #user-desc a img {
+        transform: scale(1.3);
+
+    }
+
+    #user-desc .user-name {
+        padding-left: 10px;
+    }
+
 }
 
 .btn-send,
